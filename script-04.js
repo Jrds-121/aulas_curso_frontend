@@ -1,14 +1,25 @@
-function media(){
+function maiorvalor(){
+  //+---------------
+  //Recebe as valores
+  //+---------------
   var a = parseFloat(document.getElementById('valor01').value);
   var b = parseFloat(document.getElementById('valor02').value);
-  var m = (a+b)/2;
+  var c = parseFloat(document.getElementById('valor03').value);
+  
+  //+----------------
+  // Cálculo da média
+  //+----------------
 
-  if(m == 10){
-    document.getElementById('demo').innerHTML = "Média = "+ m.toString() + "(Aprovado com Distinção)";
-  } else if (m>=7) {
-    document.getElementById('demo').innerHTML = "Média = "+ m.toString() + "(Aprovado)";
-  }else{
-    document.getElementById('demo').innerHTML = "Média = "+ m.toString() + "(Reprovado)";
+  
+  //+----------------
+  //Verificação de notas
+  //Saídas esperadas: (Aprovado com Distinção, Quase, mas reprovado, Reprovadp)
+  //+----------------
+  if (a>=b) {
+    document.getElementById('demo').innerHTML = "maior = a"
+  } 
+
+  if  {
+    document.getElementById('demo').innerHTML =  "O maior é = "+ a.toString + "(A)";
   }
-
 }
